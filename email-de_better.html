@@ -96,6 +96,15 @@
       transition: transform 0.3s;
     }
 
+    .social-icon-small {
+      max-width: 30px;
+      height: auto;
+      margin-right: 10px;
+      display: inline-block;
+      transition: transform 0.3s;
+      padding-top: 30px;
+    }
+
     .social-icon:hover {
       transform: scale(1.1);
     }
@@ -103,6 +112,11 @@
     /* Animation Styles */
     .animated-icon {
       animation: grow 4s forwards;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
     }
 
     @keyframes grow {
@@ -135,7 +149,7 @@
       animation: grow 4s forwards;
     }
 
-    /* Responsive Styles */
+    /* Media Query for smaller screens to stack the links */
     @media (max-width: 600px) {
       .container {
         padding: 10px;
@@ -150,6 +164,16 @@
         font-size: 16px;
         padding: 10px 15px;
       }
+
+      /* Ensure the Google links are stacked vertically on smaller screens */
+      .centered-logo {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-icon {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -157,7 +181,7 @@
   <div class="container">
     <!-- Header -->
     <div class="header">
-      <img src="https://i.imgur.com/Ts96DwY.png" alt="Unlock Escape logo">
+      <img src="https://i.imgur.com/Ts96DwY.png" alt="Unlock escape logo">
       <br><br>
       <h1>Glückwunsch zum erfolgreichen Escape! 🎉</h1>
     </div>
@@ -167,28 +191,45 @@
       <h2>Wie war euer Abenteuer?</h2>
       <p>Es war uns eine Freude, euch in unserem Escape Room herauszufordern! Wir hoffen, ihr hattet eine fantastische Zeit und seid mit einem breiten Lächeln entkommen😉</p>
       <p>Wir würden uns riesig über eure Bewertung auf Google freuen. Damit helft ihr anderen Abenteurern, ihre nächste Flucht zu planen – und zeigt, dass ihr echte Rätselmeister seid! 🏆</p>
+      <h3 style="margin-bottom: 0px ;">Bewertung</h3> 
+      <div class="flex">
+        
+        <!-- Google Links Section -->
+        <div class="centered-logo">
+          
+          <!-- Tal -->
+          <div style="text-align: center;">
+            <h4>Tal</h4>
+            <a href="https://www.google.com/search?sca_esv=fbf738c26e1a574b&sxsrf=ADLYWILsZgkYEnz2TVEPiAZcapO0s9SfWw:1728230972047&q=unlock+escape+munich&uds=ADvngMhHv6I8FHjkwi3JF6y5i6pBPQYpmuI_U4FnEmDTuIHnzcYKejeNnR145mpsbzD4A38DJAaTXYE3thGtl7bpe3Ng9dBLqXtv_Lpr0EYebFX1HDXS1_WCOJ7Yl92oUHy5gpBYsU_V&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7kyBOlRUGbzzyMZ8CWE5xQcdxAq5YpXyfllmdUv_45BzFge5ewlLDjITqCRrATVmeWkjaH0%3D&sa=X&ved=2ahUKEwjH2raJkvqIAxVpVvEDHcgBGNMQ3PALegQIFxAE&biw=1280&bih=559&dpr=1.5&safe=active&ssui=on" style="text-decoration: none;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo" class="social-icon animated-icon" style="animation-delay: 1s;">
+            </a>
+          </div>
 
-      <!-- Images with Links and Animation (centered vertically and horizontally) -->
-      <div class="centered-logo">
-        <a href="https://www.google.com/search?q=unlock+escape+munich" style="text-decoration: none;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo" class="social-icon animated-icon" style="animation-delay: 1s;">
-        </a>
-
-        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Funlock_escape%2F%3Futm_source%3Dqr%26igsh%3DMTEwNnJjanl0aWp3eA%253D%253D&is_from_rle" style="text-decoration: none;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="social-icon animated-icon" style="animation-delay: 2s;">
-        </a>
-
-        <a href="https://www.facebook.com/unlock2escape" style="text-decoration: none;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="social-icon animated-icon" style="animation-delay: 3s;">
-        </a>
+          <!-- Bogenhausen -->
+          <div style="text-align: center;">
+            <h4>Bogenhausen</h4>
+            <a href="https://www.google.com/search?sca_esv=fbf738c26e1a574b&sxsrf=ADLYWIIzAaPlBKCoc4XV96PempvKTn0tBw:1728230950008&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7duyDs5J7_ry44pEcjvSBjkl0ywksd0UqlBAFolpyvFfmIa72ouY-scZdHcPBBqFZm7bU8agBAMheVF8uoIaMGoj1joIGs4dh98RK7WhV8XM7KbnhWV2aiavzwvsviSUeM_QiDQg&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7oxx1fhr0MuZ2JBJ3QUWvX60uxZ7hVG-pHXnPC5-EdK8LqJNP3Xg_Kx2x7Ue3HKhpgxt2W8%3D&q=Unlock+Escape+Bogenhausen+Rezensionen&sa=X&ved=2ahUKEwi3kfX-kfqIAxU_A9sEHZTQAnsQ3PALegQIRhAF&biw=1280&bih=559&dpr=1.5&safe=active&ssui=on" style="text-decoration: none;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo" class="social-icon animated-icon" style="animation-delay: 1s;">
+            </a>
+          </div>
+          
+        </div>
       </div>
-
       <p>Wir freuen uns auf eure Bewertung!</p>
       <br>
       <div>
         <a href="https://unlock-escape.de/" class="book-now-button animated-now-book" style="animation-delay: 4s;">
-          Auf zum nächsten Abenteuer!</a>
+          Auf zum nächsten Abendteuer!</a>
       </div>  
+      <div>
+        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Funlock_escape%2F%3Futm_source%3Dqr%26igsh%3DMTEwNnJjanl0aWp3eA%253D%253D&is_from_rle" style="text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="social-icon-small animated-icon" style="animation-delay: 2s;">
+        </a>
+
+        <a href="https://www.facebook.com/unlock2escape" style="text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="social-icon-small animated-icon" style="animation-delay: 3s;">
+        </a>
+      </div>
     </div>
 
     <!-- Footer -->
