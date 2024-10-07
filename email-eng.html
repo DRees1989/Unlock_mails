@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You for Playing at Unlock Escape!</title>
   <style>
-    /* Global Styles */
     body {
       font-family: 'Arial', sans-serif;
       background-color: #f4f4f4;
@@ -79,7 +78,6 @@
       border-bottom-right-radius: 10px;
     }
 
-    /* Flexbox styles to center icons vertically and horizontally */
     .centered-logo {
       display: flex;
       justify-content: center;
@@ -87,114 +85,104 @@
       margin-top: 20px;
     }
 
-    /* Animation for Images */
-    .social-icon {
-      max-width: 100px;
-      height: auto;
-      margin-right: 25px;
-      display: inline-block;
-      transition: transform 0.3s;
+    .flex {
+      display: flex;
+      justify-content: center;
     }
 
-    .social-icon:hover {
-      transform: scale(1.1);
-    }
-
-    /* Animation Styles */
-    .animated-icon {
-      animation: grow 4s forwards;
-    }
-
-    @keyframes grow {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1.0);
-      }
-    }
-
-    .book-now-button {
-      display: inline-block;
-      background-color: #00aeef; /* Light Blue, similar to the homepage */
-      color: #ffffff; /* White Text */
-      padding: 15px 40px;
-      text-decoration: none;
-      font-size: 20px;
-      border-radius: 50px; /* Rounded Corners */
-      font-weight: bold;
-      text-align: center;
-      margin-top: 20px;
-      max-width: 300px;
-    }
-
-    .animated-now-book {
-      animation: grow 4s forwards;
-    }
-
-    /* Responsive Styles */
     @media (max-width: 600px) {
       .container {
         padding: 10px;
-      }
-
-      .social-icon {
-        margin-right: 10px;
-        max-width: 80px;
       }
 
       .button {
         font-size: 16px;
         padding: 10px 15px;
       }
+
+      .centered-logo {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-icon {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <img src="https://i.imgur.com/Ts96DwY.png" alt="Unlock Escape Logo">
-      <br><br>
-      <h1>Congratulations on Your Successful Escape! 🎉</h1>
-    </div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color: #f4f4f4; width: 100%;">
+    <tr>
+      <td align="center">
+        <table cellpadding="0" cellspacing="0" border="0" align="center" class="container" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 10px; padding: 20px;">
+          <!-- Header -->
+          <tr>
+            <td align="center" class="header" style="background-color: #0A0A0A; padding: 20px; color: #ffffff; text-align: center; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+              <img src="https://i.imgur.com/Ts96DwY.png" alt="Unlock escape logo" style="width: 100%; max-width: 300px; height: auto;">
+              <h1 style="font-size: 24px; margin: 0; text-transform: uppercase;">Congratulations on Your Successful Escape! 🎉</h1>
+            </td>
+          </tr>
 
-    <!-- Body Content -->
-    <div class="body-content">
-      <h2>How Was Your Adventure at Unlock Escape?</h2>
-      <p>We had a fantastic time challenging you in our Escape Room! We hope you enjoyed an unforgettable experience and emerged with a big smile. 😉</p>
-      <p>We would love to hear your thoughts about the game! Your feedback in a Google review will not only help us improve but also assist other adventurers in planning their next escape. <br> Show the world that you are true puzzle masters! 🏆</p>
+          <!-- Body Content -->
+          <tr>
+            <td align="center" class="body-content" style="padding: 20px; text-align: center;">
+              <h2 style="color: #0d1b2a;">How Was Your Adventure at Unlock Escape?</h2>
+              <p style="font-size: 16px; line-height: 1.6; text-align: center;"><p>We had a fantastic time challenging you in our Escape Room! We hope you enjoyed an unforgettable experience and emerged with a big smile. 😉</p>
+              <p style="font-size: 16px; line-height: 1.6; text-align: center;">We would love to hear your thoughts about the game! Your feedback in a Google review will not only help us improve but also assist other adventurers in planning their next escape. <br> Show the world that you are true puzzle masters!  🏆</p>
+              <h3 style="margin-bottom: 0px;">We look forward to your valuable review!</h3>
+              
+              <!-- Google Links Section -->
+              <table align="center" cellpadding="0" cellspacing="0" border="0" style="margin-top: 20px;">
+                <tr>
+                  <!-- Tal -->
+                  <td align="center" style="padding: 0 10px;">
+                    <h4>Tal</h4>
+                    <a href="https://www.google.com/search?sca_esv=fbf738c26e1a574b&sxsrf=ADLYWILsZgkYEnz2TVEPiAZcapO0s9SfWw:1728230972047&q=unlock+escape+munich&uds=ADvngMhHv6I8FHjkwi3JF6y5i6pBPQYpmuI_U4FnEmDTuIHnzcYKejeNnR145mpsbzD4A38DJAaTXYE3thGtl7bpe3Ng9dBLqXtv_Lpr0EYebFX1HDXS1_WCOJ7Yl92oUHy5gpBYsU_V&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7kyBOlRUGbzzyMZ8CWE5xQcdxAq5YpXyfllmdUv_45BzFge5ewlLDjITqCRrATVmeWkjaH0%3D&sa=X&ved=2ahUKEwjH2raJkvqIAxVpVvEDHcgBGNMQ3PALegQIFxAE&biw=1280&bih=559&dpr=1.5&safe=active&ssui=on" style="text-decoration: none;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo" style="width: 100px; max-width: 100px; height: auto;">
+                    </a>
+                  </td>
 
-      <!-- Images with Links and Animation -->
-      <div class="centered-logo">
-        <a href="https://www.google.com/search?q=unlock+escape+munich" style="text-decoration: none;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo" class="social-icon animated-icon" style="animation-delay: 1s;">
-        </a>
+                  <!-- Bogenhausen -->
+                  <td align="center" style="padding: 0 10px;">
+                    <h4>Bogenhausen</h4>
+                    <a href="https://www.google.com/search?sca_esv=fbf738c26e1a574b&sxsrf=ADLYWIIzAaPlBKCoc4XV96PempvKTn0tBw:1728230950008&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7duyDs5J7_ry44pEcjvSBjkl0ywksd0UqlBAFolpyvFfmIa72ouY-scZdHcPBBqFZm7bU8agBAMheVF8uoIaMGoj1joIGs4dh98RK7WhV8XM7KbnhWV2aiavzwvsviSUeM_QiDQg&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7oxx1fhr0MuZ2JBJ3QUWvX60uxZ7hVG-pHXnPC5-EdK8LqJNP3Xg_Kx2x7Ue3HKhpgxt2W8%3D&q=Unlock+Escape+Bogenhausen+Rezensionen&sa=X&ved=2ahUKEwi3kfX-kfqIAxU_A9sEHZTQAnsQ3PALegQIRhAF&biw=1280&bih=559&dpr=1.5&safe=active&ssui=on" style="text-decoration: none;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo" style="width: 100px; max-width: 100px; height: auto;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
 
-        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Funlock_escape%2F%3Futm_source%3Dqr%26igsh%3DMTEwNnJjanl0aWp3eA%253D%253D&is_from_rle" style="text-decoration: none;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="social-icon animated-icon" style="animation-delay: 2s;">
-        </a>
+              <br><br>
+              <a href="https://unlock-escape.de" class="button" style="display: inline-block; background-color: rgb(101, 255, 255); color: #ffffff; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-size: 18px;">Book your next adventure!</a>
+            </td>
+          </tr>
 
-        <a href="https://www.facebook.com/unlock2escape" style="text-decoration: none;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="social-icon animated-icon" style="animation-delay: 3s;">
-        </a>
-      </div>
+          <!-- Social Media Links -->
+          <tr>
+            <td align="center" class="centered-logo" style="text-align: center; margin-top: 20px;">
+              <a href="https://www.instagram.com/unlock.escape.munich/?igshid=NGVhN2U2NjQ0Yg%253D%253D&source=qr" target="_blank" style="margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 30px; max-width: 30px; height: auto;">
+              </a>
+              <a href="https://www.facebook.com/UnlockEscapeMunich" target="_blank" style="margin-left: 10px;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTYuMDEzIDZjLTUuNTIzIDAtMTAgNC40NzcgMTAgMTBzNC40NzcgMTAgMTAgMTAgMTAtNC40NzcgMTAtMTAtNC40NzcgMTAtMTAtMTB6bTQuNjE1IDEyaC0zLjA3NmMwLjAwMSAxLjM4Ni4wMDEgMy4wNjUgMCA0LjQ1OGguMDAxbC4wMDEgLjAwMnYxLjEyN2gtMS4xMjhsLS4wMDEtLjAwMmMtMS40NTYgMCAyLjA3MiAxLjkxNSAxLjEwMSA0LjQzNy0uMDIuMDMyLS40NzUgMCAuNDYtLjAwMnYuMDQ5aDIuMTUzYy4wMDEtMS40NDEtLjAxMS0zLjA4My0uMDAxLTQuNjQyLS4wMTEtMS4zOTEtLjAwNS0zLjA3LS4wMDEtNC40NThsLjAwMi0xLjA2NmMwLS4wMDIgLjAwMS0uMDAzLjAwMS0uMDA0aDIuMTI0di4wMDEgLjAwM2EuMDQgMCAwIDEgMCAuMDAxaC4wMDNsLjAwMiAwIC4wMDEgLS4wMDNsLS4wMDIgLjAwMWMuMDAxLS4wMDIgMC4wMDMtLjAwMi0uMDA0LS4wMDJoLjAwMWMuMDAzIDAgMCAuMDAxLS4wMDEgLjAwM2guMDAzLjAwM3YuMDAydi0uMDAxaC4wMDRjLjAwMyAwIC4wMDIgMCAwIC4wMDNsLjAwMSAwIC4wMDItLjAwNGgtLjAwMmMtLjAwMyAwIDAgMCAwLS4wMDNsLjAwMiAwIC4wMDItLjAwNGEuMDEgMDEgMCAwMS0uMDAyLS4wMDJoLjAwMmMuMDAzIDAgMCAuMDAxLS4wMDEgLjAwM2guMDAyLS4wMDJ2LjAwMWgtLjAwM2guMDAydi0uMDAyaC4wMDR2LjAwM2MuMDAzIDAgMCAwIC0uMDAxIC4wMDNsLS4wMDEuMDAzaC4wMDJsLjAwMi0uMDAzaC4wMDR2LjAwM2MuMDAzIDAgMCAuMDAxIDAgLjAwM3YtLjAwM2guMDAzdi4wMDN6IiBmaWxsPSIjM2I1N2ZjIi8+PC9zdmc+" alt="Facebook Logo" style="width: 30px; max-width: 30px; height: auto;">
 
-      <p>We look forward to your valuable review!</p>
-      <br>
-      <div>
-        <a href="https://unlock-escape.de/buchen/" class="book-now-button animated-now-book" style="animation-delay: 4s;">Book Your Next Adventure!</a>
-      </div>  
-    </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      <p>© 2024 Unlock Escape - All Rights Reserved.</p>
-      <p>Stay updated by following us on our social media channels for the latest news and exciting updates!</p>
-    </div>
-  </div>
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" class="footer" style="text-align: center; padding: 10px; font-size: 12px; color: #777; background-color: #f4f4f4; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+              <p>© 2024 Unlock Escape - All Rights Reserved.</p>
+              <p>Stay updated by following us on our social media channels for the latest news and exciting updates!</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
+
